@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+}
+
+/* HEADER */
+header{
+    width: 100%;
+}
+header .firstHed{
+    width: 100%;
+}
+header .firstHed img{
+    width: 100%;
+}
+header .secondHed{
+    width: 100%;
+}
+header .secondHed img{
+    width: 100%;
+}
+header .description{
+    width: 100%;
+    padding: 20px 0;
+    color: #fcfcfc;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+header .description .comtainer_desc{
+    width: 60%;
+}
+header .description img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+header .description h1{
+    color: #d8f135;
+    margin-left: 10px;
+    margin-bottom: 40px;
+    font-size: 90px;
+}
+header .description h4{
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom:  25px;
+}
+header .description p{
+    width: 75%;
+    line-height: 1.8;
+    margin: 20px 0;
+}
+header .description .icons{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .description .icons i{
+    margin: 0 20px;
+    color: #d8f135;
+    font-size: 50px;
+}
+
+/* RESPONSIVE HEADER */
+@media screen and (max-width : 991px) {
+    header .description h1{
+        font-size: 70px;
+    }
+}
+@media screen and (max-width : 761px) {
+    header .description h1{
+        font-size: 50px;
+    }
+    header .description p{
+        width: 100%;
+    }
+}
+@media screen and (max-width : 574px) {
+    header .description .comtainer_desc{
+        width: 100%;
+        padding: 10px 5px;
+    }
+    header .description h1{
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+        font-size: 40px;
+    }
+}
