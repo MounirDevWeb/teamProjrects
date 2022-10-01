@@ -44,7 +44,8 @@ header .description img{
     height: 100%;
     z-index: -1;
 }
-header .description h1{
+
+.sameTitle{
     color: #d8f135;
     margin-left: 10px;
     margin-bottom: 40px;
@@ -75,13 +76,15 @@ header .description .icons i{
 
 /* RESPONSIVE HEADER */
 @media screen and (max-width : 991px) {
-    header .description h1{
+     .sameTitle{
         font-size: 70px;
     }
 }
 @media screen and (max-width : 761px) {
-    header .description h1{
+     .sameTitle{
         font-size: 50px;
+        width: 100%;
+        text-align: center;
     }
     header .description p{
         width: 100%;
@@ -92,10 +95,159 @@ header .description .icons i{
         width: 100%;
         padding: 10px 5px;
     }
-    header .description h1{
+    .sameTitle{
         width: 100%;
         text-align: center;
         margin-left: 0;
         font-size: 40px;
     }
 }
+
+/* SECTION 1 */
+section{
+    width: 100%;
+    height: 200vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+section .container_sec1{
+    padding: 50px 0 0 0; 
+    width: 60%;
+    color: #fff;
+}
+
+section .container_sec1 .container2_sec1{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+section .container_sec1 .container2_sec1 .img1Sec1{
+    width: 100%;
+    height: 100vh;
+    position : absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+section .container_sec1 .container2_sec1 div:first-child h4{
+    width: 300px;
+    margin-bottom: 20px;
+    color: #d8f135;
+    font-size: 25px;
+}
+section .container_sec1 .container2_sec1 div:first-child p{
+    margin-bottom: 10px;
+    font-size: 23px;
+}
+section .container_sec1 .container2_sec1 div:first-child i{
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 35px;
+    color: #d8f135;
+    margin-bottom: 10px;
+    font-size: 23px;
+}
+
+section .container_sec1 .container2_sec1 div:last-child p{
+    margin: 0;
+    width: 70%;
+    line-height: 1.8;
+    position: relative;
+    transform: translateX(170px);
+}
+
+/* RESPONSIVE */
+@media screen and (max-width:991px) {
+    section .container_sec1{
+        width: 80%;
+    }
+    section .container_sec1 .container2_sec1 div:last-child p{
+        width: 90%;
+        transform: translateX(90px);
+    }
+}
+@media screen and (max-width:761px) {
+    section{
+        height: calc(100vh + 50vh);
+    }
+    section .container_sec1{
+        width: 100%;
+        padding: 100px 25px;
+    }
+    section .container_sec1 .container2_sec1 .img1Sec1{
+        height: calc(100vh + 50vh);
+    }
+    section .container_sec1 .container2_sec1 div:last-child p{
+        width: 100%;
+        transform: translateX(0px);
+    }
+}
+@media screen and (max-width:574px) {
+    section{
+        height: 200vh;
+    }
+    section .container_sec1{
+        width: 100%;
+        padding: 50px 5px;
+    }
+    section .container_sec1 .container2_sec1{
+        flex-direction: column;
+        width : 50%;
+    }
+    section .container_sec1 .container2_sec1 .img1Sec1{
+        height: 200vh;
+    }
+    section .container_sec1 .container2_sec1 div:first-child{
+        margin: calc(50vh) 0 62px 0;
+    }
+    section .container_sec1 .container2_sec1 div:first-child h4{
+        width: 100%;
+        font-size: 18px;
+    }
+}
+
+
+
+
+/* 
+section .container_sec1 .container3_sec1{
+    width: 100%;
+    padding: 0 0 50px 0;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+section .container_sec1 .container3_sec1 .img2Sec1{
+    width: 100%;
+    height: 100vh;
+    position : absolute;
+    top: calc(100vh - 5px);
+    left: 0;
+    z-index: -1;
+} */
+/* section .container_sec1 .container3_sec1 div:first-child h4{
+    width: 300px;
+    margin-bottom: 20px;
+    color: #d8f135;
+    font-size: 25px;
+}
+section .container_sec1 .container3_sec1 div:first-child p{
+    margin-bottom: 10px;
+    font-size: 23px;
+}
+section .container_sec1 .container3_sec1 div:first-child i{
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 35px;
+    color: #d8f135;
+    margin-bottom: 10px;
+    font-size: 23px;
+}
+section .container_sec1 .container3_sec1 div:last-child p{
+    transform: translate(-40px, -60px);
+} */
