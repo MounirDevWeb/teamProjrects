@@ -142,16 +142,16 @@ header .description .icons i{
     font-size: 25px;
     margin-bottom: 20px;
 }
-.artmap .container_artmap1 .childContainer_artmap .artmap_left p{
+.artmapParagraph{
     font-size: 23px;
     line-height: 1.5;
     margin-bottom: 20px;
 }
-.artmap .container_artmap1 .childContainer_artmap .artmap_left a{
+.artmapLink{
     font-size: 25px;
     color: #d8f135;
 }
-.artmap .container_artmap1 .childContainer_artmap .artmap_left a:nth-child(4){
+.discord{
     margin-right: 20px;
 }
 .artmap .container_artmap1 .childContainer_artmap .artmap_right{
@@ -183,12 +183,12 @@ header .description .icons i{
         font-size: 23px;
         margin-bottom: 15px;
     }
-    .artmap .container_artmap1 .childContainer_artmap .artmap_left p{
+    .artmapParagraph{
         font-size: 20px;
         line-height: 1;
         margin-bottom: 15px;
     }
-    .artmap .container_artmap1 .childContainer_artmap .artmap_left a{
+    .artmapLink{
         font-size: 23px;
     }
     .artmap .container_artmap1 .childContainer_artmap .artmap_right{
@@ -205,5 +205,75 @@ header .description .icons i{
     }
     .artmap .container_artmap1{
         height: calc(100vh + 50vh);
+    }
+}
+
+.artmap .container_artmap2{
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+}
+.artmap .childContainer_artmap2{
+    width: 80%;
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.artmap .container_artmap2 .childContainer_artmap2 .artmap_left {
+    width: 50%;
+    text-align: end;
+}
+.artmap .container_artmap2 .childContainer_artmap2 .artmap_left .imgArtmap{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.artmap .container_artmap2 .childContainer_artmap2 .artmap_right{
+    width: 55%;
+}
+.artmap .container_artmap2 .childContainer_artmap2 .artmap_right p{
+    width: 90%;
+    font-size: 23px;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 761px) {
+    .artmap .childContainer_artmap2{
+        width: 100%;
+        padding-right: 5px;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-evenly;
+    }
+    .artmap .container_artmap2 .childContainer_artmap2 .artmap_right{
+        text-align: end;
+    }
+    .artmap .container_artmap2 .childContainer_artmap2 .artmap_right p{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 575px) {
+    .artmap .container_artmap2 .childContainer_artmap2 .artmap_left{
+        text-align: center;
+    }
+    .artmap .container_artmap2 .childContainer_artmap2 .artmap_right{
+        text-align: center;
+    }
+    .artmap .container_artmap2{
+        height: calc(100vh + 50vh);
+    }
+    .artmap .childContainer_artmap2{
+        height: 100%;
+        justify-content: space-evenly;
     }
 }
