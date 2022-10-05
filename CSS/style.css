@@ -6,6 +6,7 @@
 body{
     width: 100%;
     background-color: #000;
+    overflow-x: hidden;
 }
 
 /* HEADER */
@@ -106,7 +107,7 @@ header .description .icons i{
 .artmap{
     width: 100%;
     height: auto;
-    overflow-x: hidden;
+    
 }
 .artmap .container_artmap1{
     width: 100%;
@@ -263,7 +264,74 @@ header .description .icons i{
     }
 }
 @media screen and (max-width: 575px) {
+    .artmap .childContainer_artmap2{
+        justify-content: center;
+    }
     .artmap .container_artmap2 .childContainer_artmap2 .artmap_left{
+        text-align: center;
+    }
+    .artmap .container_artmap2 .childContainer_artmap2 .artmap_right{
+        text-align: center;
+        width: 45%;
+    }
+    .artmap .container_artmap2{
+        height: calc(100vh + 50vh);
+    }
+    .artmap .childContainer_artmap2{
+        height: 100%;
+        justify-content: space-evenly;
+    }
+}
+
+.artmap .container_artmap3{
+    width: 100%;
+    height: 150vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+}
+.artmap .childContainer_artmap3{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.artmap .container_artmap2 .childContainer_artmap3 .artmap_left {
+    width: 50%;
+}
+.artmap .container_artmap3 .childContainer_artmap3 .artmap_left .imgArtmap{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.artmap .container_artmap3 .childContainer_artmap3 .artmap_right{
+    width: 50%;
+    text-align: center;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 761px) {
+    .artmap .childContainer_artmap3{
+        width: 100%;
+        padding-left: 5px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+    .artmap .container_artmap3 .childContainer_artmap3 .artmap_right{
+        margin-top: 50px;
+        text-align: start;
+    }
+}
+@media screen and (max-width: 575px) {
+    .artmap .container_artmap3 .childContainer_artmap3 .artmap_left{
+        width: 45%;
         text-align: center;
     }
     .artmap .container_artmap2 .childContainer_artmap2 .artmap_right{
