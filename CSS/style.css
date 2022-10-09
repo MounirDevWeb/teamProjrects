@@ -8,7 +8,9 @@ body{
     background-color: #000;
     overflow-x: hidden;
 }
-
+a{
+    cursor: default;
+}
 /* HEADER */
 header{
     width: 100%;
@@ -54,6 +56,8 @@ header .description img{
     margin-left: 10px;
     margin-bottom: 40px;
     font-size: 90px;
+    position: relative;
+    z-index: 100;
 }
 header .description h4{
     font-size: 20px;
@@ -118,7 +122,7 @@ header .description .icons i{
     justify-content: flex-start;
     align-items: center;
     position: relative;
-    z-index: 1;
+    z-index: 3;
 }
 .artmap .childContainer_artmap{
     width: 80%;
@@ -136,24 +140,32 @@ header .description .icons i{
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
+    z-index: 1;
 }
 .collectionTitle{
     color: #d8f135;
     font-size: 25px;
     margin-bottom: 20px;
+    position: relative;
+    z-index: 100;
 }
 .artmapParagraph{
     font-size: 23px;
     line-height: 1.5;
     margin-bottom: 20px;
+    position: relative;
+    z-index: 100;
 }
 .artmapLink{
     font-size: 25px;
     color: #d8f135;
+    position: relative;
+    z-index: 100;
 }
 .discord{
     margin-right: 20px;
+    position: relative;
+    z-index: 100;
 }
 .artmap .container_artmap1 .childContainer_artmap .artmap_right{
     width: 35%;
@@ -162,6 +174,8 @@ header .description .icons i{
 }
 .artmap .container_artmap1 .childContainer_artmap .artmap_right p{
     font-size: 23px;
+    position: relative;
+    z-index: 100;
 }
 
 /* RESPONSIVE */
@@ -217,7 +231,7 @@ header .description .icons i{
     justify-content: center;
     align-items: flex-start;
     position: relative;
-    z-index: 1;
+    z-index: 3;
 }
 .artmap .childContainer_artmap2{
     width: 80%;
@@ -237,7 +251,7 @@ header .description .icons i{
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
+    z-index: 1;
 }
 .artmap .container_artmap2 .childContainer_artmap2 .artmap_right{
     width: 55%;
@@ -245,6 +259,8 @@ header .description .icons i{
 .artmap .container_artmap2 .childContainer_artmap2 .artmap_right p{
     width: 90%;
     font-size: 23px;
+    position: relative;
+    z-index: 100;
 }
 
 /* RESPONSIVE */
@@ -291,7 +307,7 @@ header .description .icons i{
     justify-content: center;
     align-items: flex-start;
     position: relative;
-    z-index: 1;
+    z-index: 3;
 }
 .artmap .childContainer_artmap3{
     width: 80%;
@@ -308,11 +324,15 @@ header .description .icons i{
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
+    z-index: 1;
 }
 .artmap .container_artmap3 .childContainer_artmap3 .artmap_right{
     width: 50%;
     text-align: center;
+}
+.artmap .container_artmap3 .childContainer_artmap3 .artmap_right{
+    position: relative;
+    z-index: 100;
 }
 
 /* RESPONSIVE */
